@@ -35,7 +35,7 @@
 	%>
 	<table width=510 border=1>
 		<tr>
-			<td>[<%= vo.getNo() %>]</td>
+			<td>[<%= list.size() %>]</td>
 			<td><%= vo.getName() %></td>
 			<td><%= vo.getDate() %></td>
 			<td><a href="/guestbook02/gb?g=deleteform&no=<%= vo.getNo() %>">삭제</a></td>
