@@ -27,8 +27,8 @@ public class _02Servlet extends HttpServlet {
 		UserVo vo1 = new UserVo();
 		vo1.setNo(1L);
 		vo1.setName("공자");
-
 		request.setAttribute("vo", vo1);
+		
 		// session Scope
 		UserVo vo2 = new UserVo();
 		vo1.setNo(2L);
@@ -42,7 +42,7 @@ public class _02Servlet extends HttpServlet {
 		
 		request.getServletContext().setAttribute("vo", vo3);
 		
-		request.getRequestDispatcher("WEB-INF/views/02.jsp");
+		request.getRequestDispatcher("WEB-INF/views/02.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
